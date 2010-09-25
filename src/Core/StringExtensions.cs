@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 namespace LinqpadExtensions {
     public static class StringExtensions {
         public static bool IsEmpty( this string input ) {
@@ -15,6 +16,11 @@ namespace LinqpadExtensions {
 
             return input.Substring( input.Length - length, length );
 
+        }
+
+        public static string[] RegexSplit( this string input, string regex ) {
+            var rx = new Regex( regex );
+            return rx.Split( input );
         }
     }
 }
