@@ -1,0 +1,11 @@
+build
+*.mdf
+*.ldf
+~*
+myutil.sh
+results
+src/CommonAssemblyInfo.cs
+*.swp
+src/UI/Content/xml/queue.txt
+*.pidb
+*.userprefs
